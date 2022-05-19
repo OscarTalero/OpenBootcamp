@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: grey;">
+
+    <form id="formulario" action="recibe.html" method="post" style="border: 1px #000 solid; 
+    margin: 30px; padding: 30px; background-color: #f2f2f2;">
+
+    <h2>Mi Formulario</h2>
+
+    <fieldset>
+        <legend>Aqui los datos de tu formulario:</legend>
+
+        <div>
+            <input id="formulario_nombre" name="nombre" type="text" required value="" placeholder="Ingresa tu nombre"
+            pattern="[A-Za-z]+">
+            <p></p>
+            <input id="formulario_apellido" name="apellido" type="text" required value="" placeholder="Ingresa tu apellido"
+            pattern="[A-Za-z]+">
+            <p></p>
+            <input id="formulario_correo" name="correo" type="email" required value="" placeholder="Ingresa tu email"
+            pattern="[A-Za-z]+">
+            <p></p>
+            <input id="formulario_telefono" type="text" value="" required placeholder="Ingresa tu numero de telefono"
+            pattern="[0-9]+">
+            <p></p>
+            <input id="formulario_direccion" name="direccion" type="text" required value="" placeholder="Ingresa tu direccion"
+            pattern="[A-Za-z]+">
+            <p></p>
+            
+        </div>
+        <p></p>
+        <div>
+
+            <input type="submit" value="Enviar formulario">
+
+        </div>
+
+    </fieldset>
+
+    </form> 
+
+    <table class="default" border="1" style="background:#f2f2f2; color: #ff0000; margin: 30px;">
+        <caption>Tabla 1</caption>
+        <tr>
+            <th>A</th>
+            <th>B</th>
+            <th>C</th>
+            <th>D</th>
+        </tr>
+        <tr>
+            <th>Uno</th>
+            <td colspan="2">A1</td>
+            <td>A2</td>
+        </tr>
+        <tr>
+            <th>Dos</th>
+            <td>B1</td>
+            <td>B2</td>
+            <td rowspan="2">B3</td>
+        </tr>
+        <tr>
+            <th>Tres</th>
+            <td>C1</td>
+            <td >C2</td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
