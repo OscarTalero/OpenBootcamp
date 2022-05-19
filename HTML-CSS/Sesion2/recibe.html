@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form id="formulario" action="recibe.html" method="post" style="border: 1px #000 solid; 
+    margin: 30px; padding: 30px; background-color: #f2f2f2;">
+
+    <h2>Mi Formulario</h2>
+
+    <fieldset>
+        <legend>Aqui los datos de tu formulario:</legend>
+
+        <div>
+            <input id="formulario_nombre" name="nombre" type="text" required value="Oscar" placeholder="Aqui tu nombre"
+            pattern="[A-Za-z]+">
+            <p></p>
+            <input id="telefono" type="text" value="" required placeholder="Tu telefono"
+            pattern="[0-9]+">
+            <p></p>
+            <input type="password">
+            <p></p>
+            <textarea cols="40" name="comentarios" spellcheck="True"></textarea>
+            <p></p>
+            Numero entre 4 y 10. Por defecto 6
+            <p></p>
+            <input type="number" name="numero" value="6" min="4" max="10" step="2">
+            <p></p>
+            Misma opcion con slider
+            <input type="range" name="rango" value="6" min="4" max="10" step="2">
+            <p></p>
+            Fecha <input type="date">
+            <p></p>
+            Hora <input type="time">
+            <p></p>
+            <input type="radio" name="sexo" value="H" >Hombre
+            <input type="radio" name="sexo" value="M" >Mujer
+            <p></p>
+            Casilla de verificacion. Marcada por defecto
+            <input type="checkbox" name="Opcion1" checked>
+            <input type="checkbox" name="Opcion2">
+            <input type="checkbox" name="Opcion3">
+            <p></p>
+            <select name="combo" multiple>
+                <optgroup label="Opcion Basica">
+                    <option value="1" label="Uno"></option>
+                </optgroup>
+
+                <optgroup label="Opciones Avanzadas">
+                    <option value="2" label="Dos"></option>
+                    <option value="3" label="Tres"></option>
+                </optgroup>
+            </select>
+
+        </div>
+        <p></p>
+        <div>
+
+            <input type="submit" value="Enviar formulario">
+
+        </div>
+
+    </fieldset>
+
+    </form> 
+
+    <table class="default" border="1">
+        <caption>Consumo de combustible</caption>
+        <tr>
+            <th scope="row">Dia</th>
+            <th>Hoy</th>
+            <th>Mananha</th>
+            <th>Martes</th>
+        </tr>
+        <tr>
+            <th>Condicion</th>
+            <td colspan="2">Soleado</td>
+            <td>Muy Soleado</td>
+        </tr>
+        <tr>
+            <th>Temperatura</th>
+            <td rowspan="2">19C</td>
+            <td>20C</td>
+            <td>22C</td>
+        </tr>
+        <tr>
+            <th>Vientos</th>
+            <td>E 11k/h</td>
+            <td>W 22k/h</td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
