@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h2>Imagen</h2>
+<picture>
+    <source media="(min-width: 300px) and (max-width: 600px)"
+    srcset="caballo.jpg"/>
+    <img src="animal-4170531_1920.jpg" alt="Caballo corriendo"/>
+
+</picture>
+
+<h2>Video </h2>
+
+<video autoplay muted loop src="video.mp4" poster="caballo.jpg" controls></video>
+<video width="640" height="480">
+    <source src="video.mp4" type="mp4" />
+</video>
+
+<h2>Audio</h2>
+<audio src="superhero-trailer-110450.mp3" controls preload="none"></audio>
+
+</body>
+</html>
